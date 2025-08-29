@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lovable Demo — Cloudflare Pages + Prerender</title>
+  <meta name="description" content="A larger, image-heavy SPA to QA Prerender with Cloudflare Pages. Home, Gallery, Products, Blog, Contact." />
+  <meta property="og:title" content="Lovable Demo — Cloudflare Pages + Prerender" />
+  <meta property="og:description" content="Image-heavy SPA for verifying Prerender rendering at the edge." />
+  <meta property="og:image" content="/assets/images/hero.png" />
+  <link rel="preload" as="image" href="/assets/images/hero.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="logo" src="/assets/images/product_01.png" alt="Logo" />
+      <span>Lovable Cloudflare + Prerender</span>
+    </div>
+    <nav>
+      <a href="/" data-link>Home</a>
+      <a href="/gallery" data-link>Gallery</a>
+      <a href="/products" data-link>Products</a>
+      <a href="/blog" data-link>Blog</a>
+      <a href="/contact" data-link>Contact</a>
+    </nav>
+  </header>
+
+  <main id="app">
+    <p>Loading content…</p>
+  </main>
+
+  <footer>
+    <small>© Demo for QA — Built to validate Prerender on Cloudflare Pages</small>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
