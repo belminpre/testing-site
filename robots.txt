@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://testing-site-apx.pages.dev/sitemap_index.xml
+Sitemap: /sitemap_index.xml
